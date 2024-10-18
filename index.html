@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIET Mentorship Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>SLIET Mentorship Platform</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#faculty">Faculty</a></li>
+            <li><a href="#book-session">Book a Session</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="faculty">
+            <h2>Computer Science Faculty</h2>
+            <div class="faculty-list" id="faculty-list">
+            </div>
+        </section>
+        <section id="home">
+            <h2>Welcome to SLIET Mentorship Platform</h2>
+            <p>Connect with faculty members for academic and career guidance through one-on-one mentorship sessions.</p>
+        </section>
+        <section id="book-session">
+            <h2>Book a Mentorship Session</h2>
+            <form id="booking-form">
+                <label for="faculty-select">Select Faculty:</label>
+                <select id="faculty-select" required>
+                </select>
+                <br><br>
+                <label for="time-slot">Select Time Slot:</label>
+                <select id="time-slot" required>
+                </select>
+                <br><br>
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" required>
+                <br><br>
+                <button type="submit">Book Session</button>
+            </form>
+        </section>
+    </main>
+    <script src="javascript.js"></script>
+</body>
+</html>
